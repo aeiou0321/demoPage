@@ -1,15 +1,144 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>用户认证页面</title>
-</head>
-<body>
-<h1>用户登陆</h1>
-<form action="/idp/auth" method="post">
-    username:<input type="text" name="username"/><br/>
-    password:<input type="password" name="password"/><br/>
-    <input type="submit" value="登陆">
-</form>
-</body>
-</html>
+<!-- saved from url=(0072)https://extranet.marriott.com/sdm/RequestCenter/docs/QuickLinksView.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Marriott Extranet Login</title>
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0">
+	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+	<style type="text/css">article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden]{display:none}html{font-family:'Source Sans Pro', sans-serif;font-weight:normal;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-font-smoothing:antialiased !important}body{background-color:#f4f4f4;background-image:url("/pics/login-bg.png");color:#404040;margin:0;font-size:16px;line-height:1.375}@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx){body{background-image:url("/pics/login-bg-2x.png");background-size:3px 3px}}a{color:#4D90FE;text-decoration:none;-webkit-tap-highlight-color:transparent}a:focus{outline:0}a:hover,a:active{color:#0161fd;outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn,em{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0;max-width:100%;height:auto;vertical-align:middle;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}h1,h2,h3,h4,h5,h6,p,blockquote,pre,dl,dd,ol,ul,form,fieldset,legend,table,th,td,caption,hr{margin:0;padding:0}abbr[title],dfn[title]{cursor:help}u,ins{text-decoration:none}form{text-align:left\9;};ins{border-bottom:1px solid}img{font-style:italic}label,input,textarea,button,select,option{cursor:pointer}.text-input:active,.text-input:focus,textarea:active,textarea:focus{cursor:text;outline:none}.btn{border-radius:3px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;border:0;display:inline-block;padding:9px 30px;font-size:16px;line-height:1.375;font-weight:normal;text-align:center;vertical-align:middle;cursor:pointer;text-decoration:none !important;background:#4D90FE;color:white;height:44px;-webkit-transition:0.2s;-moz-transition:0.2s;-o-transition:0.2s;transition:0.2s}.btn:hover,.btn:focus{background:#3480fe;color:white}.btn.active,.btn:active{background:#3480fe}.btn.btn-block{display:block;width:100%;padding-left:0;padding-right:0;margin-bottom:15px}.btn+.btn{margin-left:10px;background:#ccc;color:#333}.btn+.btn:hover,.btn+.btn:active,.btn+.btn:focus{background:#bfbfbf}@media screen and (max-width: 767px){.btn+.btn{margin:15px 0;font-size:16px}}@media screen and (max-width: 767px){.btn{display:block;padding-right:0;padding-left:0}}label{display:block;max-width:100%;margin-bottom:5px}input,textarea,button,select{font-family:inherit;font-size:16px}input :-moz-placeholder,textarea :-moz-placeholder{color:#999}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#999}input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#999}.form-control{width:100%;height:44px;height:30px\9;padding:5px;color:#555;background-color:white;border:1px solid #979797;box-shadow:none;box-sizing:border-box;border-radius:3px}.form-control:focus{outline:0;background-color:#fff;border-color:#4D90FE}.form-group{margin-bottom:15px}.error{color:#dc322f}.error-block,.ico-success{display:none}.has-error{color:#dc322f}.has-error .form-control{color:#dc322f;border-color:#dc322f}.has-error .error-block{display:block}html,body{height:100%;min-height:640px}.wrapper{min-height:100%;margin:0 auto -150px;text-align:center\9;}.push{height:150px}.main{padding-bottom:150px;padding-top:20px\9;}.footer{background:white;padding:15px 15px 10px;color:#666;font-size:12px;min-height:150px;text-align:center}.footer p{margin-bottom:10px}.footer p:last-child{margin-bottom:0}.header{background:#404040 url("/pics/logo.png") no-repeat 50%;height:80px;background-image:url("/pics/logo.png")}@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3 / 2), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx){.header{background-image:url("/pics/logo-2x.png");background-size:160px 32px}}.header h1{display:none}body.login{min-height:100%;position:relative}body.login .login-wrapper{width:300px;margin:0 auto;padding-top:8%}body.login .login-wrapper p{margin-bottom:10px;text-align:center}body.login .login-wrapper.content{width:600px;padding-top:4%}body.login .login-wrapper.content p{text-align:left}@media screen and (max-width: 767px){body.login .login-wrapper.content{width:300px}}body.login .login-wrapper.content .center,body.login .login-wrapper.content p.center{text-align:center}@media screen and (max-width: 767px){body.login .login-wrapper.content p,body.login .login-wrapper.content li{font-size:14px}}.hidden{display:none}.callout{border:1px solid #ccc;padding:10px;border-radius:10px;margin-bottom:20px}.callout h2,.callout p{text-align:center !important;margin-bottom:10px}@media screen and (max-width: 767px){.callout h2{font-size:19px}}ul{margin-left:30px}ul li{margin-bottom:10px}h3{margin-bottom:10px}hr{background:transparent;height:0;border:0;border-top:1px solid #999;margin:20px auto;width:80px}.note{color:#999}@media only screen and (max-device-width: 962px){.securityKey{display:none}}</style>
+	<script>
+		<!--
+		var submitCount = 0;
+		function noEntry()
+		{
+			if (document.extranetlogin.username.value=="")
+			{
+				document.getElementById('missingEID').style.display = 'block';
+				document.getElementById('missingPW').style.display = 'none';
+				document.extranetlogin.username.focus();
+				return false;
+			}
+			if (document.extranetlogin.password.value=="")
+			{
+				document.getElementById('missingEID').style.display = 'none';
+				document.getElementById('missingPW').style.display = 'block';
+				document.extranetlogin.password.focus();
+				return false;
+			}
+			var newUsername = extranetlogin.username.value.toLowerCase();
+			newUsername = newUsername.trim();
+			extranetlogin.username.value = newUsername;
+		}
+		function fixUserPIN()
+		{
+			var newUserPIN = extranetlogin.pin.value.toLowerCase();
+			newUserPIN = newUserPIN.trim();
+			extranetlogin.pin.value = newUserPIN;
+		}
+		function checkForCookies()
+		{
+			var today = new Date();
+			var expire = new Date();
+			expire.setTime(today.getTime() + 3600000 * 24);
+			document.cookie = "cookieEnabledPersist=true; expires=" + expire.toGMTString();
+			document.cookie = "cookieEnabledSession=true";
+			var cookieString = ""+document.cookie;
+			if (cookieString.indexOf("cookieEnabledPersist")==-1 || cookieString.indexOf("cookieEnabledSession")==-1)
+			{
+				document.location.href = "/nocookies.html";
+			}
+		}
+		function loadMaster()
+		{
+			checkForCookies();
+			document.extranetlogin.username.focus();
+		}
+		//-->
+	</script>
+    </head>
+
+    <body class="login" onload="loadMaster()">
+
+	<script> 
+            <!--
+ 
+            function strltrim() {
+                return this.replace(/^\s+/,'');
+            }
+ 
+            function strrtrim() {
+                return this.replace(/\s+$/,'');
+            }
+            function strtrim() {
+                return this.replace(/^\s+/,'').replace(/\s+$/,'');
+            }
+ 
+            String.prototype.ltrim = strltrim;
+            String.prototype.rtrim = strrtrim;
+            String.prototype.trim = strtrim;
+ 
+            //-->
+	<!-- DO NOT TRANSLATE OR MODIFY any part of the HIDDEN parameters -->
+ 
+  //The following block of code provides users with a warning message
+  //if they do not have cookies configured on their browsers.
+  //If this environment does not use cookies to maintain login sessions,
+  //simply remove or comment out the block below.
+
+<!-- BEGIN Cookie check block -->
+<!-- DO NOT TRANSLATE anything inside the SCRIPT tag except the quoted  string warningString.  i.e. var warningString = "Translate this string"; -->
+			var warningString = "<B>WARNING:</B> To maintain your login session, make sure that your browser is configured to accept Cookies.";
+			document.cookie = 'acceptsCookies=yes';
+			if(document.cookie == ''){
+			document.write(warningString);
+			}
+			else{
+			document.cookie = 'acceptsCookies=yes; expires=Fri, 13-Apr-1970 00:00:00 GMT';
+			}
+</script>
+<noscript>
+	<B>WARNING:</B> To maintain your login session, make sure that your browser is configured to accept Cookies.
+</noscript>
+<!-- END Cookie check block -->
+<!-- DO NOT TRANSLATE OR MODIFY any part of the hidden parameter(s) -->
+
+    	<div class="wrapper">
+	    	<div class="header">
+		    	<h1>Marriott Extranet Login</h1>
+	    	</div>
+	    	<div class="main">
+	    		<div class="login-wrapper">
+	    			<p class="error"></p>
+	    			<p class="hidden error" id="missingEID">Please enter your Enterprise ID (EID)</p>
+	                <form action="/idp/auth" method="post">
+	                    <div class="form-group">
+	                        <label>Enterprise ID (EID)</label>
+	                        <input type="text" name="username" class="form-control">
+	                    </div>
+	                    <div class="form-group">
+	    			<p class="hidden error" id="missingPW">Please enter your password</p>
+	                        <label>Password</label>
+	                        <input type="password" name="password" class="form-control">
+	                    </div>
+	                    <button type="submit" class="btn btn-block">Sign In</button>
+	                </form>
+			<p><a href="http://eidhelp.marriott.com/help.html">Forgot your EID or password?</a></p>
+			 <!-- Inserted to prevent certauthn from commenting out content -->
+<!-- 			<form action="/idp/auth" method="post"> -->
+<!-- 				<input type="HIDDEN" name="username" value="cert"> -->
+<!-- 				<input type="HIDDEN" name="password" value="Certificate Login Prompt"> -->
+<!-- 				<p><a href="javascript:document.forms[&#39;pkmslogin.form&#39;].submit()" class="securityKey">Use your Security Key to sign in</a></p> -->
+<!-- 			</form> -->
+	            </div>
+	    	</div>
+	    	<div class="push"></div>
+        </div>
+    	<div class="footer">
+    		<p>Passwords and Security Key PINs must be kept confidential and are not to be shared with anyone.</p>
+		<p>NOTICE: The system you are accessing includes information and data that is proprietary and confidential to Marriott International, Inc. and its affiliates (“Marriott”). Such information and data may not be used, copied, distributed or disclosed except to the extent expressly authorized by Marriott. It must be safeguarded strictly in accordance with applicable Marriott policies, your franchise agreements, or other agreements setting forth your obligations with respect to proprietary and confidential information of Marriott. Failure to strictly comply with such obligations could result in revocation of your ability to access such information or data, termination of your relationship with Marriott, and/or criminal prosecution.</p>
+		<p>© 2002 – <script type="text/javascript">var today = new Date(); document.write(today.getFullYear());</script>2019 Marriott International, Inc. | All rights reserved.</p>
+    	</div>
+
+    
+
+<object id="__symantecPKIClientMessenger" data-supports-flavor-configuration="true" data-extension-version="0.5.0.109" style="display: none;"></object><span id="__symantecPKIClientDetector" style="display: none;">__PRESENT</span></body></html>
